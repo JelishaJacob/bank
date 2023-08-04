@@ -1,0 +1,33 @@
+
+#signup{
+    /* width: auto; */
+    /* height: 450px;
+    left: 50%; */
+}
+  #signup h2{
+    color:rgb(17 65 159) ;
+  }
+  form:hover{
+    transform: scale(1.01);
+  }
+  form{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px 2px rgb(215, 215, 215);
+    border-radius: 10px;
+    width: 160%;
+  }
+  img{
+    width: 86%;
+  }
+  /* #signbtn{
+    font-size: 19px;
+    font-weight: 500;
+  } */
+  a{
+    color: white;
+    text-decoration: none;
+    /* margin-left: 2px; */
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+  }

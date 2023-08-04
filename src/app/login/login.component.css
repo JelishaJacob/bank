@@ -1,0 +1,29 @@
+ #login{
+  /* height: 450px; */
+  /* background-color: rgba(127, 129, 131, 0.549);
+  background-color: rgba(49, 86, 219, 0.508); */
+  /* left: 50%; */
+}
+#login h2{
+  color:rgb(17 65 159); 
+}
+form{
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px 2px rgb(215, 215, 215);
+  border-radius: 10px;
+  width: 160%;
+}
+form:hover{
+    transform: scale(1.01);
+}
+img{
+  /* margin-left: 70px; */
+  width: 86%;
+}
+a{
+  color: rgb(17 65 159);
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+} 

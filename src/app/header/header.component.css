@@ -1,0 +1,8 @@
+#head{
+    width: 100%;
+    /* height: 40px; */
+    background-color:  rgb(32 32 151);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}

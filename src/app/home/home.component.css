@@ -1,0 +1,42 @@
+.navbar{
+    background-color: rgb(32 32 151) ;
+    /* background-color: #f0c830; */
+}
+.navbar a{
+    color: white;
+    /* color:  rgb(32 32 151); */
+}
+button{
+    color: white;
+}
+.dropdown a{
+    color: black;
+}
+.dropdown a:hover{
+    background-color:rgb(32 32 151) ;
+    color: white;
+}
+#home{
+    /* background-color: #f4f6f6de; */
+}
+
+p{
+    /* text-align: justify; */
+}
+h1,h3{
+    color:  rgb(32 32 151);
+}
+img{
+    margin-top: 50px;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    box-shadow: 2px 2px 1px 2px rgb(159, 155, 155);
+    border-radius: 20px;
+}
+img:hover{
+    transform: scale(1.05);
+}
+#b1{
+    background-color: rgb(53, 89, 209) ;
+}
