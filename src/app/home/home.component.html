@@ -9,25 +9,27 @@
             </ul>
             <ul class="navbar-nav me-5 mb-2 mb-lg-0 ">
                 <li class="nav-item ">
-                    <a class="nav-link " aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Balance Check</a>
+                    <a class="nav-link " aria-current="page" href="" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Balance Check</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Money Transfer</a>
+                    <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">Money Transfer</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Account Statements</a>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <button class="btn" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <!-- <i class="fa-solid fa-circle-user fa-lg"></i> -->
                             <i class="fa-solid fa-circle-user fa-2x" style="color: #e2e8f3;"></i>
 
                         </button>
                         <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="#">View Profile</a></li>
+                            <li><a class="dropdown-item" aria-current="page" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">View Profile</a></li>
                             <li><a class="dropdown-item" href="#">Delete Account</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
@@ -51,12 +53,13 @@
             <div id="d1" class="text-center pt-5">
                 <h3 class="pt-3 pb-3">Welcome Alan</h3>
                 <h1 class="pt-2">Enjoy Net Banking with<span style="color: gold;"> SBI</span></h1>
-                <p class="mt-4 pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sunt eveniet consectetur at, sint
+                <p class="mt-4 pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sunt eveniet
+                    consectetur at, sint
                     deserunt similique eum iure architecto deleniti suscipit reiciendis soluta quos culpa unde? Nobis
                     aperiam accusamus exercitationem.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repellat illum, officia atque nobis
                     ipsa reiciendis ipsam laborum nam iure quo provident aspernatur fugit molestiae perspiciatis.
-                    Excepturi expedita officia ipsam.    
+                    Excepturi expedita officia ipsam.
                 </p>
             </div>
             <!-- <div class="mt-5 mb-4 ps-5" style="float: left;">
@@ -69,7 +72,7 @@
 
         <div class="col-lg-5 col-md-12">
             <div id="d2">
-                <img src="https://i.postimg.cc/jSy0v2S0/mobBank.jpg" alt="" srcset="">
+                <img src="https://i.postimg.cc/jSy0v2S0/mobBank.jpg" id="img1" alt="" srcset="">
             </div>
 
         </div>
@@ -82,20 +85,80 @@
 
 
 
-<!-- Modal -->
+<!--BalanceCheck  Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content w-75">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <h4>Hello <span class="text-primary">Name</span></h4>
+                <div class="text-center">
+                    <img src="https://i.postimg.cc/wvrBZVm2/bal.png" alt="" srcset="" class="w-50">
+                    <p>The Current Available Balance in <br> Account Number
+                        <strong class="text-primary">111AC904</strong>
+                    </p>
+                    <h4><span class="text-primary">Rs- 0.00</span> Only</h4>
+                </div>
+
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- money tranfer OFFCANVAS -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header" style="background-color: rgb(52 52 184);">
+      <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Money Transfer</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <img src="https://i.postimg.cc/YqVLPQFb/moneytrans.jpg" alt="" srcset="">      
+    </div>
+
+    <form class="p-3" action="">
+        <input  type="text" placeholder="Recipient Account Number" class="form-control mt-3">
+        <input  type="text" placeholder="Amount" class="form-control mt-3">
+        <input  type="text" placeholder="PassWord" class="form-control mt-3">
+        <button class="btn btn-primary w-100 mt-4">Send Money</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- Profile Model -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-75">
+            <div class="modal-header" style="background-color:rgb(52 52 184);">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="https://i.postimg.cc/bwWRRvkW/profile1.jpg" alt="" srcset="" class="w-50">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="mt-2">User Name</h5>
+                        <hr>
+                        <h5 class="">Account Number</h5>
+                    </div>
+
+                    <div class="col-6">
+                        <h3 class="text-dark">abcd</h3>
+                        <hr>
+                        <h3 class="text-dark">1234</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

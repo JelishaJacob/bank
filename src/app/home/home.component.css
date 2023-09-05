@@ -26,7 +26,7 @@ p{
 h1,h3{
     color:  rgb(32 32 151);
 }
-img{
+#img1{
     margin-top: 50px;
     width: 90%;
     margin-bottom: 50px;
@@ -34,9 +34,15 @@ img{
     box-shadow: 2px 2px 1px 2px rgb(159, 155, 155);
     border-radius: 20px;
 }
-img:hover{
+#img1:hover{
     transform: scale(1.05);
 }
 #b1{
     background-color: rgb(53, 89, 209) ;
+}
+
+form input{
+    border: 2px rgb(152 153 158 / 70%) ridge;
+    font-size: 15px;
+    font-weight: 500;
 }

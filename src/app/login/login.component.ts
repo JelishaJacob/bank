@@ -25,5 +25,9 @@ export class LoginComponent implements OnInit {
   pwdChange(event:any){
     console.log(event.target.value);
   }
+  // login(){    //(a:any,b:any)
+  //   // console.log(a.value);
+  //   // console.log(b.value);
+  // }
 
 }
