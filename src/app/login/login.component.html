@@ -8,13 +8,13 @@
           <h2 class="mt-3 text-center ">Sign In</h2>
 
           <div class=" p-2 ">
-            <input (change)="acChange($event)"  id="u1" type="text" placeholder="Enter Account No." class="form-control">
+            <input [(ngModel)]="acno" id="u1" name="acno" type="text" placeholder="Enter Account No." class="form-control">
             <!-- (change)="acChange($event)"     [placeholder]="data2" -->
             <!-- #acno -->
           </div>
 
           <div class="mt-3 p-2">
-            <input (change)="pwdChange($event)"   id="p1" type="password" placeholder="Enter PassWord" class="form-control">
+            <input [(ngModel)]="psw" id="p1" name="pwd" type="password" placeholder="Enter PassWord" class="form-control">
             <!-- (change)="pwdChange($event)"         -->
             <!-- #pwd -->
           </div>
@@ -23,7 +23,8 @@
             <button (click)="login()" type="button" class="btn btn-primary mb-4" id="logibtn">Login</button>
             <!-- (click)="login()" -->
             <!-- (click)="login(acno,pwd)" -->
-            <p style="color: rgb(17 65 159);font-weight: 450;">Don't have account?  <a href="#">create account</a></p>
+            <p style="color: rgb(17 65 159);font-weight: 450;">Don't have account?  <a routerLink="signup">create account</a></p>
+            <!-- <a href="/signup">create account</a> -->
           </div>
 
         </form>
